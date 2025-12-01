@@ -103,8 +103,8 @@
     <link rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/plugins/jquery-bar-rating/dist/themes/fontawesome-stars.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/plugins/jquery-ui/jquery-ui.min.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/plugins/select2/dist/css/select2.min.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/css/custom2.css">
-    <link rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/css/custom3.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/css/main_color.css">
+    <link rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/css/custom.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>template/<?php echo template(); ?>/css/bootstrap-multiselect.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>/asset/admin/plugins/datatables/dataTables.bootstrap.css">
     <link rel="stylesheet" href="<?php echo base_url(); ?>asset/summernote/summernote-bs4.css">
@@ -1102,7 +1102,7 @@
                             <input class="form-control" name='s' value='<?= cetak($_GET['s']); ?>' type="text" placeholder="Aku mau Belanja..." autocomplete='off' required>
                             <button type='submit'>Cari</button>
                         </form>
-                        <!-- <p class='populer'><b>Trending :</b>
+                        <p class='populer'><b>Pencarian terpopuler saat ini :</b>
                             <?php
                             $jumlah_tampil = 6;
                             $tag_populer = $this->db->query("SELECT group_concat(a.tag_seo separator ',') as tag_populer FROM(SELECT * FROM `tagpro` ORDER BY count DESC LIMIT 15) as a")->row_array();
@@ -1112,7 +1112,7 @@
                                 echo "<a href='" . base_url() . "produk?f=0&s=$tag_seo'>#$tag_seo</a>";
                             }
                             ?>
-                        </p> -->
+                        </p>
                     </div>
                     <div class="header__right">
                         <div class="header__actions">
@@ -1132,28 +1132,6 @@
                             ?>
                             <!-- <a class="header__extra" href="#"><i class="icon-chart-bars"></i><span><i>0</i></span></a> -->
                             <?php
-                            // if ($this->session->level == 'konsumen') {
-                            //     $sopir = $this->db->query("SELECT id_sopir FROM rb_sopir where id_konsumen='" . $this->session->id_konsumen . "'")->row_array();
-                            //     $cek_pesanan_sopir = $this->db->query("SELECT * FROM rb_penjualan a WHERE a.kurir='$sopir[id_sopir]' AND a.proses!='4' AND service='SOPIR'")->num_rows();
-                            //     $pesanan_sopir = '<span class="badge badge-secondary" style="font-size:85%; background-color: #cecece; color:#000">' . $cek_pesanan_sopir . '</span>';
-
-                            //     echo "<div class='ps-dropdown'>
-                            //                         <a style='padding-right:0px' href='#'>Akun <span class='badge badge-secondary'>" . ($komplain_beli->num_rows() + $cek_pesanan_sopir) . "</span> <span class='fa fa-chevron-down'></span></a>
-                            //                         <ul class='ps-dropdown-menu'>";
-                            //     $data = array('<i class="icon-user"></i> Profile', '<i class="icon-couch"></i> Sosmed', '<i class="icon-bag-dollar"></i> Data Bank', '<i class="fa fa-money"></i> Keuangan', '<i class="icon-heart"></i> Wishlist', '<i class="icon-bag2"></i> Pembelian');
-
-                            //     $link = array('profile', 'sosial_media', 'rekening_bank', 'withdraw', 'wishlist', 'orders_report', 'trx_pulsa', 'sopir');
-                            //     for ($i = 0; $i < count($data); $i++) {
-                            //         echo "<li><a href='" . base_url() . "members/" . $link[$i] . "'>" . $data[$i] . "</a></li>";
-                            //     }
-                            //     echo "<li><a href='" . base_url() . "komplain?s=pelapor'><i class='fa fa-warning'></i> Komplain <span class='badge badge-secondary' style='font-size:85%; background-color: #cecece; color:#000'>" . $komplain_beli->num_rows() . "</span></a></li>
-                            //                                   <li><a href='" . base_url() . "auth/logout'><i class='icon-exit'></i> Logout</a></li>
-                            //                         </ul>
-                            //                       </div>";
-                            //     echo "";
-                            // } else {
-                            //     echo "<a class='header__extra' href='#' data-toggle='modal' data-target='.bd-example-modal-lg'> <i class='icon-user'></i> </a>";
-                            // }
                             if ($this->session->level == 'konsumen') {
                                 // Cek apakah user sudah login sebagai konsumen
                                 $sopir = $this->db->query("SELECT id_sopir FROM rb_sopir WHERE id_konsumen='" . $this->session->id_konsumen . "'")->row_array();
@@ -1174,7 +1152,7 @@
                                         <i class='icon-user'></i>
                                         </a>
                                     ";
-                            }
+                                }
                             ?>
                         </div>
 
