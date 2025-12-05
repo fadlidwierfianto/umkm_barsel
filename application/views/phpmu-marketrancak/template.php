@@ -1102,9 +1102,9 @@
                             <input class="form-control" name='s' value='<?= cetak($_GET['s']); ?>' type="text" placeholder="Aku mau Belanja..." autocomplete='off' required>
                             <button type='submit'>Cari</button>
                         </form>
-                        <p class='populer'><b>Pencarian terpopuler saat ini :</b>
+                        <p class='populer'><b>Pencarian populer saat ini :</b>
                             <?php
-                            $jumlah_tampil = 6;
+                            $jumlah_tampil = 5;
                             $tag_populer = $this->db->query("SELECT group_concat(a.tag_seo separator ',') as tag_populer FROM(SELECT * FROM `tagpro` ORDER BY count DESC LIMIT 15) as a")->row_array();
                             $random_keys = array_rand(explode(',', $tag_populer['tag_populer']), $jumlah_tampil);
                             for ($i = 0; $i < $jumlah_tampil; $i++) {
