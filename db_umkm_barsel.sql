@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 05, 2025 at 10:48 AM
+-- Generation Time: Dec 05, 2025 at 11:13 AM
 -- Server version: 8.0.30
 -- PHP Version: 7.4.33
 
@@ -484,7 +484,7 @@ CREATE TABLE `identitas` (
 --
 
 INSERT INTO `identitas` (`id_identitas`, `nama_website`, `pengirim_email`, `email`, `password`, `url`, `facebook`, `rekening`, `no_telp`, `meta_deskripsi`, `meta_keyword`, `favicon`, `maps`, `api_mutasibank`, `api_rajaongkir`, `free_reseller`, `flash_deal`, `info_atas`) VALUES
-(1, 'UMKM BARSEL : Shooping From Home and Anytime', 'UMKM Barsel', 'umkmbarsel@gmail.com', 'hlhidfvemcfjxrdz', 'http://demo.technophoria.co.id/umkm_barsel/', 'https://www.facebook.com/robbyprihandaya, https://twitter.com/robbyprihandaya, https://plus.google.com/106633506064864167239, https://id.linkedin.com/', '3511887071', '0812 6777 13xx', 'Menyajikan berita terbaru, tercepat, dan terpercaya seputar tunggul hitam.', 'Selamat datang di UMKM Barito Selatan, adalah penyempurnaan dan perbaikan.', 'logo-wilayah-small.png', '||', '', '', 12, '2025-04-15', 'Yuk Jual Beli di UMKM Barsel, <a href=\"https://demo.technophoria.co.id/umkm_barsel/auth/login\"><strong>Daftar Sekarang!</strong></a>');
+(1, 'UMKM BARSEL : Shooping From Home and Anytime', 'UMKM Barsel', 'umkmbarsel@gmail.com', 'hlhidfvemcfjxrdz', 'http://demo.technophoria.co.id/umkm_barsel/', '', '3511887071', '0812 6777 13xx', 'Menyajikan berita terbaru, tercepat, dan terpercaya seputar tunggul hitam.', 'Selamat datang di UMKM Barito Selatan, adalah penyempurnaan dan perbaikan.', 'logo-wilayah-small.png', '||', '', '', 12, '2025-04-15', 'Yuk Jual Beli di UMKM Barsel, <a href=\"https://demo.technophoria.co.id/umkm_barsel/auth/login\"><strong>Daftar Sekarang!</strong></a>');
 
 -- --------------------------------------------------------
 
@@ -1183,7 +1183,7 @@ CREATE TABLE `pma__recent` (
 --
 
 INSERT INTO `pma__recent` (`username`, `tables`) VALUES
-('root', '[{\"db\":\"db_umkm_barsel\",\"table\":\"menu\"},{\"db\":\"db_umkm_barsel\",\"table\":\"header\"},{\"db\":\"db_umkm_barsel\",\"table\":\"rb_kategori_produk\"},{\"db\":\"db_umkm_barsel\",\"table\":\"rb_reseller\"},{\"db\":\"db_umkm_barsel\",\"table\":\"rb_konsumen\"},{\"db\":\"db_umkm_barsel\",\"table\":\"kategori\"}]');
+('root', '[{\"db\":\"db_umkm_barsel\",\"table\":\"logo\"},{\"db\":\"db_umkm_barsel\",\"table\":\"header\"},{\"db\":\"db_umkm_barsel\",\"table\":\"menu\"},{\"db\":\"db_umkm_barsel\",\"table\":\"rb_kategori_produk\"},{\"db\":\"db_umkm_barsel\",\"table\":\"rb_reseller\"},{\"db\":\"db_umkm_barsel\",\"table\":\"rb_konsumen\"},{\"db\":\"db_umkm_barsel\",\"table\":\"kategori\"}]');
 
 -- --------------------------------------------------------
 
@@ -1290,7 +1290,7 @@ CREATE TABLE `pma__userconfig` (
 --
 
 INSERT INTO `pma__userconfig` (`username`, `timevalue`, `config_data`) VALUES
-('root', '2025-12-05 10:48:38', '{\"Console\\/Mode\":\"collapse\"}');
+('root', '2025-12-05 10:50:20', '{\"Console\\/Mode\":\"collapse\"}');
 
 -- --------------------------------------------------------
 
@@ -7783,7 +7783,7 @@ INSERT INTO `statistik` (`ip`, `tanggal`, `hits`, `online`) VALUES
 ('127.0.0.1', '2025-11-10', 3, '1762748650'),
 ('127.0.0.1', '2025-11-15', 41, '1763177253'),
 ('127.0.0.1', '2025-11-17', 6, '1763365065'),
-('127.0.0.1', '2025-12-05', 9, '1764931567');
+('127.0.0.1', '2025-12-05', 23, '1764932748');
 
 -- --------------------------------------------------------
 
